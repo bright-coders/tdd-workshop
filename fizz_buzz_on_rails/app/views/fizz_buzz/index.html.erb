@@ -1,0 +1,10 @@
+<h1> FizzBuzz </h1>
+<%= form_with url: fizz_buzz_list_path, method: :get, local: true do %>
+  <%= label_tag :start_at %>
+  <%= text_field_tag :start_at %>
+  <br>
+  <%= label_tag :end_at %>
+  <%= text_field_tag :end_at %>
+  <br>
+  <%= submit_tag 'Submit' %>
+<% end %>
